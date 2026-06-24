@@ -11,7 +11,7 @@ class Vehicle{
 
     // Creating a method to change the value of the final variable speed which will throw a compile time error because we cannot change the value of a final variable.
     void increaseSpeed(){
-        maxSpeed = 150;
+        // maxSpeed = 150;
         System.out.println("Increasing speed...");
     }
 
@@ -22,10 +22,10 @@ class Vehicle{
 
 // Car class is inheriting the Vehicle class and trying to override the display method which will throw a compile time error because we cannot override a final method.
 class Car extends Vehicle{
-    @Override
-    final void display(){
-        System.out.println("Max speed of the car is: " + maxSpeed);
-    }
+    // @Override
+    // final void display(){
+    //     System.out.println("Max speed of the car is: " + maxSpeed);
+    // }
 }
 
 
